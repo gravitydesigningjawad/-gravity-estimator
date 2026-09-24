@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#1f3b4d"/>
+  <!-- stylised house section + ruler: estimate -->
+  <path d="M112 262 256 142l144 120" fill="none" stroke="#fff" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M152 244v126h208V244" fill="none" stroke="#fff" stroke-width="28" stroke-linejoin="round"/>
+  <rect x="112" y="392" width="288" height="36" rx="8" fill="#b8572a"/>
+  <path d="M148 392v18M184 392v12M220 392v18M256 392v12M292 392v18M328 392v12M364 392v18" stroke="#fff" stroke-width="6"/>
+  <text x="256" y="338" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="110" font-weight="700" fill="#fff">G</text>
+</svg>

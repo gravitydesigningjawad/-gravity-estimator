@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Gravity Estimator</title>
+  <meta name="description" content="Site estimates and BOQ for residential projects — Gravity Architectural Studio, Alappuzha.">
+  <meta name="theme-color" content="#1f3b4d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Gravity Est.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <header class="app-header no-print">
+    <button type="button" id="hdr-back" class="icon-btn" data-act="back" aria-label="Back to projects" hidden>‹</button>
+    <div class="hdr-text">
+      <div id="hdr-title">Gravity Estimator</div>
+      <div id="hdr-sub"></div>
+    </div>
+  </header>
+
+  <main id="main" class="app-main">
+    <noscript><p class="card">Gravity Estimator needs JavaScript enabled.</p></noscript>
+  </main>
+
+  <nav id="nav" class="bottom-nav no-print" aria-label="Main"></nav>
+  <div id="toast" class="toast no-print" role="status" aria-live="polite"></div>
+
+  <input type="file" id="file-import" accept="application/json,.json" hidden>
+  <input type="file" id="file-logo" accept="image/*" hidden>
+
+  <!-- Load order matters: config → engine → storage → app -->
+  <script src="js/config.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
